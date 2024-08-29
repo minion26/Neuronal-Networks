@@ -1,0 +1,124 @@
+Learning rate: 0.002
+Epochs: 20
+Batch size: 25
+Epoch 1, Loss: 2.2987659843674946
+Got 1064/10000 with accuracy  10.64
+Epoch 2, Loss: 2.2944173218729875
+Got 1712/10000 with accuracy  17.12
+Epoch 3, Loss: 2.285853243210912
+Got 2423/10000 with accuracy  24.23
+Epoch 4, Loss: 2.2632622657614117
+Got 2534/10000 with accuracy  25.34
+Epoch 5, Loss: 2.1840727569072733
+Got 3393/10000 with accuracy  33.93
+Epoch 6, Loss: 2.0446735456970866
+Got 1354/10000 with accuracy  13.54
+Epoch 7, Loss: 1.9185022577699242
+Got 1797/10000 with accuracy  17.97
+Epoch 8, Loss: 1.8031230547706176
+Got 4072/10000 with accuracy  40.72
+Epoch 9, Loss: 1.6820224481921087
+Got 3411/10000 with accuracy  34.11
+Epoch 10, Loss: 1.5734593590440915
+Got 5009/10000 with accuracy  50.09
+Epoch 11, Loss: 1.4597074002773
+Got 4762/10000 with accuracy  47.62
+Epoch 12, Loss: 1.3664233369851904
+Got 5327/10000 with accuracy  53.27
+Epoch 13, Loss: 1.288290642077447
+Got 6376/10000 with accuracy  63.76
+Epoch 14, Loss: 1.2154065584101008
+Got 7520/10000 with accuracy  75.20
+Epoch 15, Loss: 1.1564422830534649
+Got 7336/10000 with accuracy  73.36
+Epoch 16, Loss: 1.0989061994801521
+Got 7259/10000 with accuracy  72.59
+Epoch 17, Loss: 1.0411442874315615
+Got 7332/10000 with accuracy  73.32
+Epoch 18, Loss: 0.987662542721874
+Got 7202/10000 with accuracy  72.02
+Epoch 19, Loss: 0.9412516623780889
+Got 7082/10000 with accuracy  70.82
+Epoch 20, Loss: 0.8997554704116167
+Got 6934/10000 with accuracy  69.34
+
+
+
+
+Learning rate: 0.001
+Epochs: 35
+Batch size: 25
+Epoch 1, Loss: 2.2986039444000985
+Got 1064/10000 with accuracy  10.64
+Epoch 2, Loss: 2.296315097700816
+Got 1064/10000 with accuracy  10.64
+Epoch 3, Loss: 2.2934908111298493
+Got 1091/10000 with accuracy  10.91
+Epoch 4, Loss: 2.2894710807049927
+Got 1805/10000 with accuracy  18.05
+Epoch 5, Loss: 2.283235023640406
+Got 2562/10000 with accuracy  25.62
+Epoch 6, Loss: 2.2726196233918228
+Got 3122/10000 with accuracy  31.22
+Epoch 7, Loss: 2.252291727856129
+Got 3378/10000 with accuracy  33.78
+Epoch 8, Loss: 2.2086380599130355
+Got 2703/10000 with accuracy  27.03
+Epoch 9, Loss: 2.1120620625238087
+Got 4096/10000 with accuracy  40.96
+Epoch 10, Loss: 1.9840046007947654
+Got 3461/10000 with accuracy  34.61
+Epoch 11, Loss: 1.8671307060575655
+Got 2794/10000 with accuracy  27.94
+Epoch 12, Loss: 1.7685060429708426
+Got 3804/10000 with accuracy  38.04
+Epoch 13, Loss: 1.6540539507220182
+Got 4144/10000 with accuracy  41.44
+Epoch 14, Loss: 1.5534358139821243
+Got 4117/10000 with accuracy  41.17
+Epoch 15, Loss: 1.4799783892781297
+Got 4682/10000 with accuracy  46.82
+Epoch 16, Loss: 1.4039499029439204
+Got 5375/10000 with accuracy  53.75
+Epoch 17, Loss: 1.330298175329831
+Got 5739/10000 with accuracy  57.39
+Epoch 18, Loss: 1.2644105634531873
+Got 6122/10000 with accuracy  61.22
+Epoch 19, Loss: 1.1977787007064826
+Got 6427/10000 with accuracy  64.27
+Epoch 20, Loss: 1.1319341888593657
+Got 6791/10000 with accuracy  67.91
+Epoch 21, Loss: 1.0708870303583586
+Got 7012/10000 with accuracy  70.12
+Epoch 22, Loss: 1.0152064704162425
+Got 7048/10000 with accuracy  70.48
+Epoch 23, Loss: 0.9721515746264211
+Got 6960/10000 with accuracy  69.60
+Epoch 24, Loss: 0.9358595165977495
+Got 6941/10000 with accuracy  69.41
+Epoch 25, Loss: 0.9015859336906785
+Got 7163/10000 with accuracy  71.63
+Epoch 26, Loss: 0.8709628805356159
+Got 7256/10000 with accuracy  72.56
+Epoch 27, Loss: 0.8430402501923462
+Got 7443/10000 with accuracy  74.43
+Epoch 28, Loss: 0.8158469378303234
+Got 7583/10000 with accuracy  75.83
+Epoch 29, Loss: 0.7912560114451559
+Got 7624/10000 with accuracy  76.24
+Epoch 30, Loss: 0.7692593388600149
+Got 7668/10000 with accuracy  76.68
+Epoch 31, Loss: 0.7495245741134827
+Got 7675/10000 with accuracy  76.75
+Epoch 32, Loss: 0.7305320262656777
+Got 7693/10000 with accuracy  76.93
+Epoch 33, Loss: 0.7141198923489335
+Got 7683/10000 with accuracy  76.83
+Epoch 34, Loss: 0.6984694003291396
+Got 7738/10000 with accuracy  77.38
+Epoch 35, Loss: 0.6846032742140631
+Got 7782/10000 with accuracy  77.82
+
+
+
+

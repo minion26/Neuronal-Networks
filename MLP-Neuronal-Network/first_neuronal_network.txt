@@ -498,3 +498,19 @@ Got 9763/10000 with accuracy  97.63
 
 
 
+With momentum 0.99 
+With dampening 0.25 
+With momentum 0.99 
+With dampening 0.25 
+With momentum 0.99 
+With dampening 0.25 
+learning_rate=0.01
+batch_size=20
+Epoch 1
+With momentum 0.99 
+With dampening 0.25 
+learning_rate=0.01
+batch_size=20
+Epoch 1
+Got 9245/10000 with accuracy  92.45
+Epoch 2

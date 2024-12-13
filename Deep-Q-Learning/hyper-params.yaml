@@ -1,0 +1,36 @@
+cartpole1:
+  env_id: CartPole-v1
+  replay_memory_size: 2000
+  mini_batch_size: 128
+  epsilon_init: 1 # Initial epsilon value
+  epsilon_decay: 0.995
+  epsilon_min: 0.01 # minimum epsilon value, there is a 5% that the agent will take a random action, and 95% that it will take the best action that the policy has learned
+  network_sync_rate : 100 # The rate at which the target network is updated
+  learning_rate_a : 0.1 # Learning rate for the actor
+  discount_factor_g : 0.95
+  hidden_dim : 128
+
+cartpole2:
+  env_id: CartPole-v1
+  replay_memory_size: 2000
+  mini_batch_size: 128
+  epsilon_init: 1 # Initial epsilon value
+  epsilon_decay: 0.995
+  epsilon_min: 0.01 # minimum epsilon value, there is a 5% that the agent will take a random action, and 95% that it will take the best action that the policy has learned
+  network_sync_rate : 100 # The rate at which the target network is updated
+  learning_rate_a : 0.1 # Learning rate for the actor
+  discount_factor_g : 0.95
+  hidden_dim : 128
+
+
+flappybird1:
+  env_id: FlappyBird-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1 # Initial epsilon value
+  epsilon_decay: 0.95
+  epsilon_min: 0.05 # minimum epsilon value, there is a 5% that the agent will take a random action, and 95% that it will take the best action that the policy has learned
+  network_sync_rate : 10 # The rate at which the target network is updated
+  learning_rate_a : 0.01 # Learning rate for the actor
+  discount_factor_g : 0.99
+  hidden_dim : 512

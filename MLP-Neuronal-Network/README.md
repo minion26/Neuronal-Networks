@@ -1,35 +1,40 @@
 # MLP - Neuronal Network
 
-## Enuntul Temei
-Antrenati o retea neuronala MLP cu cel putin un strat ascuns pentru identificarea cifrei dintr-o imagine, cu ajutorul pytorch.
+## Task Description
+Train an MLP neural network with at least one hidden layer to identify the digit in an image using PyTorch.
 
-Aveti setul de date de la MNIST ce contine cateva zeci de mii de astfel de exemple de imagini (input-ul), impreuna cu cifra (output-ul dorit).
+You have the MNIST dataset, which contains tens of thousands of such image examples (input) along with the corresponding digit (desired output).
 
-## Explicații la Tema Rezolvata
+## Explanation of the Solved Task
 
-### 1. Introducere
-Cu ajutorul PyTorch si NumPy am realizat 3 retele neuronale care identifica cifra dintr-o imagine. Am realizat 3 deoarece am vrut sa observ diferentele dintre utilizarea unei librarii specifice crearii de retele neuronale si cele facute manual cu si fara optimizer. Fiecare retea neuronala are atasata si un fisier `.txt` in care sunt salvate: `learning rate`, `epocile`, `batch size`, si `acuratetea`. Toate retelele neuronale au 2 straturi ascunse cu **392** si **100** de neuroni, functiile de activare `ReLU` si `Softmax`, pentru ultimul strat, si functia de cost `Cross-Entropy Loss`.
+### 1. Introduction
+Using PyTorch and NumPy, I developed three neural networks to identify the digit in an image. 
+I created three networks to observe the differences between using a specialized library for 
+building neural networks versus manually implementing them, with or without an optimizer. 
+Each neural network is accompanied by a `.txt` file that stores the following details: 
+``learning rate``, ``epochs``, ``batch size``, and ``accuracy``. All neural networks have two hidden 
+layers with **392** and **100** neurons, activation functions ``ReLU`` and ``Softmax`` for the final layer, 
+and the ``Cross-Entropy`` Loss cost function.
 
-### 2. Structura Proiectului
-Explică structura proiectului tău. De exemplu:
-- **Fisierul `first_neuronal_network.py`**: Retea neuronala construita cu ajutorul framework-ului PyTorch. Am observat diferente majore intre utilizare cu bias sau fara, respectiv optimizer SGD simplu si cu momentum.
-  1. *optimizer* cu *momentum = 0.90*, *learning rate = 0.01* : acuratete de **97.81%**
-  2. *optimezer* cu *momentum = 0.90* impreuna cu *dampening = 25%*, *learning rate = 0.01*: acuratete de **97.74%**
-  3. *optimizer simplu* si *bias = False*, *learning rate = 0.01*` :  acuratete de **95.86%**
-  4. *optimizer simplu* si *bias = True*, *learning rate = 0.01* :  acuratete de **86.20%**
-  5. *optimizer* si *momentum = 0.99*, *learning rate = 0.01* : acuratete de **10.30**
-- **Fisierul `neuronal_network.py`**: Retea neuronala construita manual doar cu ajutorul librariei NumPy, *learning rate = 0.001*, *epoch = 35*, *batch size = 25* si s-a ajuns la o acuratete de **77.82%**.
-- **Fisierul `nn-optimizer.py`**: Retea neuronala construita manual doar cu ajutorul librariei NumPy dar cu optimizerului **Stochastic Gradient Descent**, *learning rate = 0.001*, *epoch = 35*, *batch size = 25* si s-a ajuns la o acuratete de **81.40%**.
+### 2. Project Structure
+- **File `first_neuronal_network.py`**: Neural network built using the PyTorch framework. Significant differences were observed when using a bias versus not, and between simple SGD and SGD with momentum.
+  1. *Optimizer* with *momentum = 0.90*, *learning rate = 0.01*: accuracy of **97.81%**
+  2. *Optimizer* with *momentum = 0.90* and *dampening = 25%*, *learning rate = 0.01*: accuracy of **97.74%**
+  3. *Simple optimizer* with *bias = False*, *learning rate = 0.01*: accuracy of **95.86%**
+  4. *Simple optimizer* with *bias = True*, *learning rate = 0.01*: accuracy of **86.20%**
+  5. *Optimizer* with *momentum = 0.99*, *learning rate = 0.01*: accuracy of **10.30%**
+  
+- **File `neuronal_network.py`**: Neural network manually built using only the NumPy library, with *learning rate = 0.001*, *epochs = 35*, *batch size = 25*, achieving an accuracy of **77.82%**.
+  
+- **File `nn-optimizer.py`**: Neural network manually built using only the NumPy library but with the **Stochastic Gradient Descent** optimizer, *learning rate = 0.001*, *epochs = 35*, *batch size = 25*, achieving an accuracy of **81.40%**.
 
-### 3. Metodologie
-Descrie pașii pe care i-ai urmat pentru a rezolva tema. De exemplu:
-1. **Colectarea Datelor**: Am colectat datele din setul de date de la MNIST.
-2. **Preprocesarea Datelor**: Datele sunt impartite in train_set, valid_set si test_set.
-3. **Implementarea Algoritmului**: Folosirea a 2 a straturi ascunse cu **392** si **100** de neuroni, functiile de activare `ReLU` si `Softmax`, pentru ultimul strat, si functia de cost `Cross-Entropy Loss`.
+### 3. Methodology
+1. **Data Collection**: Data was collected from the MNIST dataset.
+2. **Data Preprocessing**: The data was split into training, validation, and test sets.
+3. **Algorithm Implementation**: Two hidden layers with **392** and **100** neurons were used, with activation functions `ReLU` and `Softmax` for the final layer, and the `Cross-Entropy Loss` cost function.
 
 
-### 4.1. Rezultate 
-S-au putut observa beneficiile utilizarii framework-ului PyTorch, optimizat pentru performanta, utilizarea eficienta a optimizerului si cum implementarea manuala si actualizarea vectorilor de weights si bias contribuie negativ la performanta retelei neuronale. In plus, folosirea optimizerului **`SGD`** pentru estimarea gradinetului la fiecare pas aduce o imbunatatire mare, insa folosirea impreuna cu **`momentum`**, accelerand in directia gradientului si reducand oscilarea, face ca reteaua neuronala sa invete si mai bine.
-
+### 4.1. Results  
+The benefits of using the PyTorch framework, optimized for performance, were evident, as were the efficient use of the optimizer and the negative impact of manual implementation on neural network performance. Additionally, using the **`SGD`** optimizer for estimating the gradient at each step brought significant improvement. Combining it with **`momentum`**, which accelerates in the gradient's direction and reduces oscillation, allowed the neural network to learn even better.
 
 

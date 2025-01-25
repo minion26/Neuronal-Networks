@@ -1,29 +1,32 @@
 # Single Layer Perceptron
 
-## Enuntul Temei
-Antrenati 10 perceptroni pentru identificarea cifrei dintr-o imagine.
+## Task Description
+Train 10 perceptrons to identify the digit in an image.
 
-In esenta, vom avea cate un perceptron pentru fiecare cifra, care va invata sa diferentieze intre cifra respectiva si restul cifrelor. Prin asamblarea acestora putem deduce ce cifra ar fi intr-o imagine specifica.
+Essentially, we will have one perceptron for each digit, which will learn to differentiate between its respective digit and the rest. By combining these perceptrons, we can deduce the digit present in a specific image.
 
-Aveti setul de date de la MNIST ce contine cateva zeci de mii de astfel de exemple de imagini (input-ul), impreuna cu cifra (output-ul dorit al ansamblului).
+You have the MNIST dataset, which contains tens of thousands of such image examples (input), along with the corresponding digit (the desired output of the system).
 
-## Explicații la Tema Rezolvata
+## Explanation of the Solved Task
 
-### 1. Introducere
-Am utilizat atat Perceptronul Simplu, cat si ADALINE. 
+### 1. Introduction
+I used both the Simple Perceptron and ADALINE.
 
-### 2. Structura Proiectului
-Explică structura proiectului tău. De exemplu:
-- **Fisierul `single-perceptron-layer.py`**: Conține o clasa Perceptron in care am utilizat algoritmul Perceptronului Simplu.
-- **Fisierul `adaline-single-perceptron-layer.py`**: Adaptarea codului pentru a folosi caracteristicile perceptronului ADALINE.
+### 2. Project Structure
+- File ``single-perceptron-layer.py``: Contains a Perceptron class implementing the Simple Perceptron algorithm.
+- File ``adaline-single-perceptron-layer.py``: Adapts the code to use the features of the ADALINE perceptron.
 
 ### 3. Metodologie
-Descrie pașii pe care i-ai urmat pentru a rezolva tema. De exemplu:
-1. **Colectarea Datelor**: Am colectat datele din setul de date de la MNIST.
-2. **Preprocesarea Datelor**: Datele sunt impartite in train_set, valid_set si test_set.
-3. **Implementarea Algoritmului**: Am implementat o clasa Perceptron in care am initializat rata de invatare, epocile, numarul de intrari si numarul de perceptroni (10 pentru fiecare cifra de la 0 la 9). Aceasta clasa are o functie *prediction* in care se foloseste o functie step sau liniara, *evaluate* in  care se calculeaza acuratetea pentru fiecare epoca, respectiv *train* unde se antreneaza modelul, se calculeaza eroarea in functie de tipul de perceptron folosit, simplu sau ADALINE, si se recalculeaza bias-ul si vectorul de weights.
+1. **Data Collection**: Data was gathered from the MNIST dataset.
+2. **Data Preprocessing**: The data was split into training, validation, and test sets.
+3. **Algorithm Implementation**:
+   - Implemented a ``Perceptron`` class where the learning rate, epochs, number of inputs, and number of perceptrons (10 for each digit from 0 to 9) were initialized.
+   - This class contains:
+     - A ``prediction`` function that uses a step or linear function.
+     - An ``evaluate`` function to compute accuracy for each epoch.
+     - A ``train`` function where the model is trained, errors are computed based on the perceptron type (Simple or ADALINE), and the bias and weight vector are updated.
 
-### 4.1. Rezultate - Simple Perceptron
+### 4.1. Results - Simple Perceptron
 | Epoch | Validation Accuracy |
 |-------|---------------------|
 | 1     | 0.8196              |
@@ -40,7 +43,7 @@ Descrie pașii pe care i-ai urmat pentru a rezolva tema. De exemplu:
 ![image](https://github.com/user-attachments/assets/da23a087-9abb-4b4f-aa72-77003e15d541)
 
 
-### 4.2. Rezultate - ADALINE Perceptron
+### 4.2. Results - ADALINE Perceptron
 | Epoch | Validation Accuracy |
 |-------|---------------------|
 | 1     | 0.7368              |

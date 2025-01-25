@@ -62,8 +62,8 @@ class Agent:
         # instance of the FlappyBird environment
         # env = gymnasium.make("FlappyBird-v0", render_mode="human"if render else None, use_lidar=False)
         global  best_reward, step_count, memory, target_dqn, epsilon
-        # env = gymnasium.make("CartPole-v1", render_mode="human" if render else None)
-        env = gymnasium.make("FlappyBird-v0", render_mode="human" if render else None, use_lidar=False)
+        env = gymnasium.make("CartPole-v1", render_mode="human" if render else None)
+        # env = gymnasium.make("FlappyBird-v0", render_mode="human" if render else None, use_lidar=False)
 
         # Number of actions
         num_actions = env.action_space.n
@@ -248,6 +248,6 @@ class Agent:
 
 
 if __name__ == '__main__':
-    agent = Agent('flappybird1')
+    agent = Agent('cartpole1')
     agent.run(is_training=True, render=True)
     print("Done")
